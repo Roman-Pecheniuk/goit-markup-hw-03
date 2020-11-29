@@ -4,7 +4,17 @@
     --text-color: #757575;
     --btn2-color: #F5F4FA;
     --bgc2-color: #2F303A;
-    --bgc3-color: #e5e5e5;
+    --bgc3-color: #ffffff;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
 }
 
 body{
@@ -22,6 +32,8 @@ body{
 .features .list,
 .work-list .list{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a{
@@ -29,6 +41,12 @@ a{
 }
 
 /*site-nav*/
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
 .nav-list .link{
     color: var(--prime-text-color);
 }
@@ -52,14 +70,18 @@ a{
 
 .hero{
     background-color: var(--bgc2-color);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 h1{
+    margin-top: 0;
+    margin-bottom: 30px;
     color: #ffffff;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -67,13 +89,20 @@ h1{
 .button{
     color: white;
     background-color: var(--link-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
     font-family: inherit;
+    border: 0;
+    padding: 10px 32px;
 }
 
 .button.primary{
     color: white;
     background-color: var(--link-color);
     font-family: sans-serif;
+    border-radius: 4px;
 }
 
 .button.primary:hover,
@@ -90,12 +119,16 @@ h1{
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
+    padding: 6px 22px;
+    border-radius: 4px;
+    letter-spacing: 0.03em;
 }
 
 .button.secondary:hover,
 .button.secondary:focus{
     color: var(--bgc3-color);
     background-color: var(--link-color);
+    font-family: inherit;
 }
 
 .section-title{
@@ -110,12 +143,24 @@ h1{
 
 .features .title,
 .projects-list .title{
+    margin-top: 0;
+    margin-bottom: 10px;
     color: var(--prime-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+
+.features p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.features{
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .team .title{
@@ -133,6 +178,9 @@ h1{
     line-height: 1.71;  
 }
 
+.team{
+    background-color: var(--btn2-color);
+}
 .team .text{
     color: var(--text-color);
     font-style: normal;
