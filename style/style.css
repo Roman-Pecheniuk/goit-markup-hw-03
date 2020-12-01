@@ -190,7 +190,8 @@ h1{
 }
 
 .features .title,
-.projects-list .title{
+.projects-list .title,
+.team .title{
     margin-top: 0;
     margin-bottom: 10px;
     color: var(--prime-text-color);
@@ -226,7 +227,6 @@ h1{
 
 .work{
     padding-top: 0;
-    display: flex;
 }
 
 .work-list{
@@ -238,12 +238,6 @@ h1{
 }
 
 /* team */  
-
-.team .title{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-}
 
 .features .text,
 .projects-list .text{
@@ -258,17 +252,48 @@ h1{
     background-color: var(--btn2-color);
     text-align: center;
 }
+
+.team .list{
+    display: flex;
+}
+
+.team .title{
+    text-transform: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.team .team-card{
+    background-color: var(--bgc3-color);
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-card img{
+    margin-bottom: 30px;
+}
+
+.team .item:not(:last-child){
+    padding-right: 30px;
+}
+
 .team .text{
     color: var(--text-color);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.18;
-}
-
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* footer */
+
 footer{
     padding-bottom: 60px;
     padding-top: 60px;
