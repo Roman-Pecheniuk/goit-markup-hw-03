@@ -36,6 +36,7 @@ h4 {
   margin-bottom: 0;
 }
 
+
 .text,
 .list,
 .features .list,
@@ -53,7 +54,7 @@ a{
 .container{
     margin-left: auto;
     margin-right: auto;
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -339,22 +340,27 @@ footer{
 
 .buttons-list{
     display: flex;
-    justify-content: center
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .filters .filter:not(:last-child){
     margin-right: 8px;
-    margin-bottom: 30px;
 }
 
 .filters .filter{
     justify-content: center;
-    margin-bottom: 50px;
 }
 
 .projects .projects-list{
     display: flex;
     flex-wrap: wrap;
+}
+
+.card-img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .project-item{
