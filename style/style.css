@@ -36,6 +36,7 @@ h4 {
   margin-bottom: 0;
 }
 
+.text,
 .list,
 .features .list,
 .work-list .list{
@@ -357,12 +358,15 @@ footer{
 }
 
 .project-item{
-    margin-right: 30px;
-    margin-bottom: 30px;
-    border: 1px solid #EEEEEE;
+        border: 1px solid #EEEEEE;
     width: 370px;
 }
 
 .project-item:nth-last-child(3n){
     margin-right: 0;
+}
+
+.project-cards{
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
