@@ -24,7 +24,7 @@ body{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    background-color: #ffffff;
+    background-color: var(--bgc3-color);
     color: #212121;
 }
 
@@ -84,7 +84,7 @@ a{
 .header{
     padding-top: 24px;
     padding-bottom: 25px;
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header .contact-list{
@@ -128,7 +128,7 @@ h1{
 }
 
 .button{
-    color: white;
+    color: var(--bgc3-color);
     background-color: var(--link-color);
     font-weight: 700;
     font-size: 16px;
@@ -140,7 +140,7 @@ h1{
 }
 
 .button.primary{
-    color: white;
+    color: var(--bgc3-color);
     background-color: var(--link-color);
     font-family: sans-serif;
     border-radius: 4px;
@@ -179,8 +179,8 @@ h1{
     letter-spacing: 0.03em;
     font-size: 36px;
     line-height: 1.17;
-    padding-top: 0;
-    padding-bottom: 50px;
+    
+    margin-bottom: 50px;
 }
 
 .section{
@@ -307,7 +307,7 @@ footer{
 }
 
 .footer .contact-list{
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .link{
@@ -365,7 +365,7 @@ footer{
 }
 
 .project-item{
-        border: 1px solid #EEEEEE;
+    border: 1px solid #EEEEEE;
     width: 370px;
 }
 
